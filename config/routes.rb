@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get '/spots', to:'spots#index'
-  get '/spots/:id/:text', to:'spots#show'
+  get '/spots/:id/:name', to:'spots#show'
   post '/spots', to:'spots#create'
 
   get '/cources', to:'cources#index'
