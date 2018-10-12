@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_11_084304) do
+ActiveRecord::Schema.define(version: 2018_09_13_043146) do
 
   create_table "cources", force: :cascade do |t|
     t.string "name"
@@ -31,13 +31,6 @@ ActiveRecord::Schema.define(version: 2018_10_11_084304) do
     t.integer "user_id"
     t.integer "cource_id"
     t.integer "spot_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "images", force: :cascade do |t|
-    t.string "tag"
-    t.binary "data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
